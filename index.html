@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range with Value Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <centre>
+    <label for="myRange">Select a value:</label>
+    <input type="range" min="0" max="100" value="0" step="1" id="myRange">
+    <span id="rangeValue">100</span> 
+
+    <script>
+        // Get the input element and the span for displaying the value
+        var rangeInput = document.getElementById("myRange");
+        var rangeValueDisplay = document.getElementById("rangeValue");
+
+        // Update the displayed value when the input range changes
+        rangeInput.addEventListener("input", function() {
+            rangeValueDisplay.innerText = rangeInput.value;
+        });
+    </script>
+    
+    <div class="spinner">
+
+    </div>
+    <progress id="file" value="100" max="100"> 32% </progress>
+    </centre>
+    <button id="whatsaap-share-btn">SHARE NOW</button>
+    <script src="script.js"></script>
+    <kbd>hello</kbd>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+</body>
+</html>
